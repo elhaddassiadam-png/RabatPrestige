@@ -124,8 +124,11 @@ body.ltr{direction:ltr;text-align:left}
 .nav-cta{background:var(--accent);color:var(--primary);padding:10px 22px;border-radius:var(--r-full);font-weight:700;font-size:.875rem;transition:var(--tr)}
 .nav-cta:hover{background:var(--accent-dark);transform:translateY(-1px)}
 
-.menu-toggle{display:none;flex-direction:column;gap:5px;padding:8px;cursor:pointer}
-.menu-toggle span{width:24px;height:2px;background:var(--white);border-radius:2px;transition:var(--tr)}
+.menu-toggle{display:none;flex-direction:column;gap:5px;padding:8px;cursor:pointer;background:none;border:none}
+.menu-toggle span{width:24px;height:2px;background:var(--white);border-radius:2px;transition:var(--tr);transform-origin:center}
+.menu-toggle.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-toggle.is-open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.menu-toggle.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
 /* ============================================================
    HERO
@@ -515,13 +518,16 @@ body.ltr{direction:ltr;text-align:left}
 /* Mobile menu */
 .mobile-menu-open .nav-menu{
   display:flex;flex-direction:column;
-  position:fixed;top:var(--nav-h);left:0;right:0;
-  background:rgba(13,27,42,.98);padding:24px 24px 32px;gap:4px;z-index:999;
-  box-shadow:var(--shadow-xl);backdrop-filter:blur(20px)
+  position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;
+  background:rgba(13,27,42,.98);padding:20px 20px 130px;gap:4px;z-index:999;
+  box-shadow:var(--shadow-xl);backdrop-filter:blur(20px);overflow-y:auto
 }
 .mobile-menu-open .nav-actions{
-  display:flex;flex-direction:column;
-  position:fixed;top:calc(var(--nav-h) + 280px);left:0;right:0;
-  background:rgba(13,27,42,.98);padding:0 24px 24px;z-index:999;gap:10px
+  display:flex;flex-direction:column;align-items:stretch;
+  position:fixed;bottom:0;left:0;right:0;
+  background:rgba(13,27,42,.98);padding:14px 20px 28px;z-index:1000;gap:10px;
+  border-top:1px solid rgba(255,255,255,.12)
 }
 .mobile-menu-open .nav-link{padding:14px 16px;border-radius:var(--r-md);font-size:1rem}
+.mobile-menu-open .lang-btn{width:100%;justify-content:center;padding:12px 20px}
+.mobile-menu-open .nav-cta{text-align:center;padding:13px 20px;font-size:1rem}

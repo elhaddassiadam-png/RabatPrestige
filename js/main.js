@@ -117,9 +117,17 @@ function initNavbar() {
     navbar.classList.toggle('transparent',  window.scrollY <= 60);
   }, { passive: true });
   const toggle = document.getElementById('menuToggle');
-  if (toggle) toggle.addEventListener('click', () => document.body.classList.toggle('mobile-menu-open'));
-  document.querySelectorAll('.nav-link').forEach(l =>
-    l.addEventListener('click', () => document.body.classList.remove('mobile-menu-open')));
+  if (toggle) toggle.addEventListener('click', () => {
+    document.body.classList.toggle('mobile-menu-open');
+    toggle.classList.toggle('is-open');
+  });
+  const closeMenu = () => {
+    document.body.classList.remove('mobile-menu-open');
+    if (toggle) toggle.classList.remove('is-open');
+  };
+  document.querySelectorAll('.nav-link').forEach(l => l.addEventListener('click', closeMenu));
+  document.querySelectorAll('.lang-option').forEach(o => o.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
 }
 
 /* ── Lang Switcher ────────────────────────────────────────── */
