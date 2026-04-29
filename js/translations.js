@@ -267,7 +267,7 @@ const properties = [
     locationAr:'السويسي، الرباط', locationFr:'Souissi, Rabat',
     locationEn:'Souissi, Rabat', locationEs:'Souissi, Rabat',
     price:'8 500 000', beds:6, baths:5, area:580,
-    img:'https://images.unsplash.com/photo-1564013799919-ab3d54bcd0c8?w=800&q=80&auto=format&fit=crop',
+    img:'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=800&q=80&auto=format&fit=crop',
     gradient:'linear-gradient(135deg,#0D1B2A 0%,#C9A84C 100%)',
     icon:'fa-house'
   },
