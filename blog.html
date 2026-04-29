@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المقالات العقارية | رباط بريستيج — نصائح واستثمار عقاري بالرباط</title>
+  <meta name="description" content="مقالات وتقارير متخصصة في سوق العقار المغربي — أفضل أحياء الرباط للاستثمار، دليل شراء العقار، نصائح المستثمرين وتحليلات السوق.">
+  <meta name="keywords" content="مقالات عقارية المغرب, استثمار عقاري الرباط, شراء عقار المغرب, حي الرياض استثمار, blog immobilier Maroc, investissement Rabat">
+  <link rel="canonical" href="https://www.rabatprestige.ma/blog.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .blog-articles-intro { background:var(--off-white); padding:60px 0 40px; }
+    .blog-intro-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; margin-bottom:60px; }
+    .blog-summary-card { background:var(--white); border-radius:var(--r-lg); overflow:hidden; border:1px solid var(--border); display:flex; transition:var(--tr); cursor:pointer; box-shadow:var(--shadow-sm); }
+    .blog-summary-card:hover { box-shadow:var(--shadow-lg); transform:translateY(-4px); border-color:transparent; }
+    .blog-summary-img { width:100px; flex-shrink:0; }
+    .blog-summary-img .img-bg { width:100%; height:100%; display:flex; align-items:center; justify-content:center; font-size:2rem; color:rgba(255,255,255,.25); }
+    .blog-summary-body { padding:18px 16px; }
+    .blog-summary-body h3 { font-size:.95rem; font-weight:700; color:var(--primary); line-height:1.45; margin-bottom:8px; }
+    .blog-summary-body .meta { font-size:.8rem; color:var(--text-light); display:flex; gap:10px; flex-wrap:wrap; }
+    .blog-summary-body .meta i { color:var(--accent); }
+    .article-body h3 { font-size:1.2rem; font-weight:700; color:var(--primary); margin:28px 0 12px; }
+    .article-body p  { color:var(--text-gray); font-size:1rem; line-height:1.9; margin-bottom:18px; }
+    .article-body blockquote { border-inline-start:4px solid var(--accent); padding:16px 24px; background:rgba(201,168,76,.05); border-radius:0 var(--r-sm) var(--r-sm) 0; margin:28px 0; font-style:italic; color:var(--text-dark); }
+    @media(max-width:768px) { .blog-intro-grid { grid-template-columns:1fr; } .blog-summary-card { flex-direction:column; } .blog-summary-img { width:100%; height:100px; } }
+  </style>
+</head>
+<body class="rtl">
+
+  <!-- WhatsApp Float -->
+  <div class="whatsapp-float">
+    <span class="whatsapp-tooltip">تواصل معنا الآن</span>
+    <button class="whatsapp-float-btn" onclick="trackWhatsApp('floating')" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="wa-badge" id="waBadge"></span>
+    </button>
+  </div>
+  <button class="back-to-top" id="backToTop"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-text">رباط بريستيج</span>
+        <span class="logo-sub">Rabat Prestige Immobilier</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html"       class="nav-link" data-t="nav.home">الرئيسية</a></li>
+        <li><a href="properties.html"  class="nav-link" data-t="nav.properties">العقارات</a></li>
+        <li><a href="blog.html"        class="nav-link active" data-t="nav.blog" data-page="blog.html">المقالات</a></li>
+        <li><a href="index.html#about" class="nav-link" data-t="nav.about">من نحن</a></li>
+        <li><a href="contact.html"     class="nav-link" data-t="nav.contact">اتصل بنا</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-btn" id="langBtn">
+            <span class="flag">🇲🇦</span>العربية<i class="fa-solid fa-chevron-down" style="font-size:.7rem"></i>
+          </button>
+          <div class="lang-dropdown">
+            <div class="lang-option active" data-lang="ar">🇲🇦 العربية</div>
+            <div class="lang-option" data-lang="fr">🇫🇷 Français</div>
+            <div class="lang-option" data-lang="en">🇬🇧 English</div>
+            <div class="lang-option" data-lang="es">🇪🇸 Español</div>
+          </div>
+        </div>
+        <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+        <a href="contact.html" class="nav-cta" data-t="nav.cta">ابحث الآن</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <header class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html" data-t="nav.home">الرئيسية</a>
+        <i class="fa-solid fa-chevron-left"></i>
+        <span data-t="nav.blog">المقالات</span>
+      </div>
+      <h1 data-t="blog.title">المقالات العقارية</h1>
+      <p data-t="blog.subtitle">نصائح ومعلومات قيمة عن سوق العقار في المغرب</p>
+    </div>
+  </header>
+
+  <!-- Articles Intro -->
+  <div class="blog-articles-intro">
+    <div class="container">
+      <div class="section-title fade-up" style="margin-bottom:32px">
+        <span class="section-badge" id="blogBadge">4 مقالات متخصصة</span>
+        <h2 id="blogDiscover">اكتشف <span>محتوانا المميز</span></h2>
+      </div>
+      <div class="blog-intro-grid" id="articleSummaryGrid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Full Articles (rendered dynamically) -->
+  <main class="articles-section">
+    <div class="container">
+      <div id="articlesContainer">
+        <!-- Rendered by JS from articlesContent -->
+      </div>
+    </div>
+  </main>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-card fade-up">
+        <div class="cta-content">
+          <h2><span data-t="cta.title">هل أنت مستعد للعثور على </span><span data-t="cta.titleHighlight">منزل أحلامك؟</span></h2>
+          <p data-t="cta.desc">تواصل معنا الآن عبر واتساب وسيتولى فريقنا المتخصص مساعدتك</p>
+          <button onclick="trackWhatsApp('blog-cta')" class="btn btn-whatsapp">
+            <i class="fa-brands fa-whatsapp" style="font-size:1.3rem"></i>
+            <span data-t="cta.btn">تواصل عبر واتساب</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">رباط بريستيج</div>
+          <span class="logo-sub">Rabat Prestige Immobilier</span>
+          <p data-t="footer.desc">رواد العقار في الرباط — نخدمكم بأمانة واحترافية منذ 2009</p>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-t="footer.quickLinks">روابط سريعة</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"      class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="nav.home">الرئيسية</span></a></li>
+            <li><a href="properties.html" class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="nav.properties">العقارات</span></a></li>
+            <li><a href="blog.html"       class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="nav.blog">المقالات</span></a></li>
+            <li><a href="contact.html"    class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="nav.contact">اتصل بنا</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-t="footer.articlesCol">المقالات</h4>
+          <ul class="footer-links" id="footerArticleLinks">
+            <li><a href="blog.html#article-1" class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="footer.blogLink1">أفضل أحياء الاستثمار</span></a></li>
+            <li><a href="blog.html#article-2" class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="footer.blogLink2">دليل شراء العقار</span></a></li>
+            <li><a href="blog.html#article-3" class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="footer.blogLink3">حي الرياض</span></a></li>
+            <li><a href="blog.html#article-4" class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="footer.blogLink4">نصائح الاستثمار</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-t="footer.contact">تواصل معنا</h4>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item"><i class="fa-solid fa-location-dot"></i><span data-t="footer.address">شارع المنزه، حي الرياض، الرباط</span></div>
+            <div class="footer-contact-item"><i class="fa-solid fa-phone"></i><a href="tel:+212612345678">+212 6 12 34 56 78</a></div>
+            <div class="footer-contact-item"><i class="fa-solid fa-envelope"></i><a href="mailto:contact@rabatprestige.ma">contact@rabatprestige.ma</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> رباط بريستيج للعقار. <span data-t="footer.rights">جميع الحقوق محفوظة</span></p>
+        <div class="footer-bottom-links">
+          <a href="#" data-t="footer.privacy">سياسة الخصوصية</a>
+          <a href="#" data-t="footer.terms">شروط الاستخدام</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/articles.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    /* Update footer article links after lang change */
+    document.addEventListener('DOMContentLoaded', () => {
+      // Footer article links update on lang change
+      const origSetLang = window.setLanguage;
+    });
+  </script>
+</body>
+</html>

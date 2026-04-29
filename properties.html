@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>العقارات | رباط بريستيج — فيلات وشقق حي الرياض والسويسي</title>
+  <meta name="description" content="تصفح أكثر من 500 عقار فاخر في الرباط — فيلات وشقق وبنتهاوس في حي الرياض والسويسي وأكدال. أسعار تنافسية وخدمة احترافية.">
+  <meta name="keywords" content="فيلا للبيع الرباط, شقة للبيع حي الرياض, عقارات السويسي, بنتهاوس الرباط, villa vente Rabat, appartement Hay Riad, immobilier Souissi">
+  <link rel="canonical" href="https://www.rabatprestige.ma/properties.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="rtl">
+
+  <!-- WhatsApp Float -->
+  <div class="whatsapp-float">
+    <span class="whatsapp-tooltip">تواصل معنا الآن</span>
+    <button class="whatsapp-float-btn" onclick="trackWhatsApp('floating')" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="wa-badge" id="waBadge"></span>
+    </button>
+  </div>
+  <button class="back-to-top" id="backToTop"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-text">رباط بريستيج</span>
+        <span class="logo-sub">Rabat Prestige Immobilier</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html"      class="nav-link" data-t="nav.home">الرئيسية</a></li>
+        <li><a href="properties.html" class="nav-link active" data-t="nav.properties" data-page="properties.html">العقارات</a></li>
+        <li><a href="blog.html"       class="nav-link" data-t="nav.blog">المقالات</a></li>
+        <li><a href="index.html#about" class="nav-link" data-t="nav.about">من نحن</a></li>
+        <li><a href="contact.html"    class="nav-link" data-t="nav.contact">اتصل بنا</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-btn" id="langBtn">
+            <span class="flag">🇲🇦</span>العربية<i class="fa-solid fa-chevron-down" style="font-size:.7rem"></i>
+          </button>
+          <div class="lang-dropdown">
+            <div class="lang-option active" data-lang="ar">🇲🇦 العربية</div>
+            <div class="lang-option" data-lang="fr">🇫🇷 Français</div>
+            <div class="lang-option" data-lang="en">🇬🇧 English</div>
+            <div class="lang-option" data-lang="es">🇪🇸 Español</div>
+          </div>
+        </div>
+        <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+        <a href="contact.html" class="nav-cta" data-t="nav.cta">ابحث الآن</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <header class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html" data-t="nav.home">الرئيسية</a>
+        <i class="fa-solid fa-chevron-left"></i>
+        <span data-t="nav.properties">العقارات</span>
+      </div>
+      <h1 data-t="nav.properties">العقارات</h1>
+      <p id="propSubtitle">أكثر من 500 عقار فاخر في أرقى أحياء الرباط</p>
+    </div>
+  </header>
+
+  <!-- Properties Content -->
+  <main class="page-content">
+    <div class="container">
+      <!-- Filter Bar -->
+      <div class="filter-bar" role="search" aria-label="Filter properties">
+        <div class="filter-group">
+          <label id="labelType">النوع</label>
+          <select id="filterType" onchange="applyFilters()">
+            <option value="all">جميع الأنواع</option>
+            <option value="villa">فيلا</option>
+            <option value="apartment">شقة</option>
+            <option value="penthouse">بنتهاوس</option>
+            <option value="land">أرض</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label id="labelStatus">الحالة</label>
+          <select id="filterStatus" onchange="applyFilters()">
+            <option value="all">للبيع والإيجار</option>
+            <option value="sale">للبيع</option>
+            <option value="rent">للإيجار</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label id="labelArea">الحي</label>
+          <select id="filterArea" onchange="applyFilters()">
+            <option value="all">جميع الأحياء</option>
+            <option value="hayriad">حي الرياض</option>
+            <option value="souissi">السويسي</option>
+            <option value="agdal">أكدال</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label id="labelRooms">الغرف</label>
+          <select id="filterBeds">
+            <option value="all">أي عدد</option>
+            <option value="1">1+</option>
+            <option value="3">3+</option>
+            <option value="5">5+</option>
+          </select>
+        </div>
+        <button class="filter-btn" onclick="applyFilters()">
+          <i class="fa-solid fa-sliders"></i>
+          <span id="filterBtnText">تصفية</span>
+        </button>
+      </div>
+
+      <!-- Properties Grid -->
+      <div class="properties-grid" id="propertiesGrid" aria-live="polite" aria-label="Property listings"></div>
+
+      <!-- Load More -->
+      <div style="text-align:center;margin-top:48px">
+        <button class="btn btn-secondary" id="morePropBtn" onclick="trackWhatsApp('more-properties')">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>تواصل معنا لمزيد من العقارات</span>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- CTA Banner -->
+  <section class="cta-section" aria-label="Contact CTA">
+    <div class="container">
+      <div class="cta-card fade-up">
+        <div class="cta-content">
+          <h2><span data-t="cta.title">هل أنت مستعد للعثور على </span><span data-t="cta.titleHighlight">منزل أحلامك؟</span></h2>
+          <p data-t="cta.desc">تواصل معنا الآن عبر واتساب وسيتولى فريقنا المتخصص مساعدتك</p>
+          <button onclick="trackWhatsApp('properties-cta')" class="btn btn-whatsapp">
+            <i class="fa-brands fa-whatsapp" style="font-size:1.3rem"></i>
+            <span data-t="cta.btn">تواصل عبر واتساب</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">رباط بريستيج</div>
+          <span class="logo-sub">Rabat Prestige Immobilier</span>
+          <p data-t="footer.desc">رواد العقار في الرباط — نخدمكم بأمانة واحترافية منذ 2009</p>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-t="footer.quickLinks">روابط سريعة</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"      class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="nav.home">الرئيسية</span></a></li>
+            <li><a href="properties.html" class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="nav.properties">العقارات</span></a></li>
+            <li><a href="blog.html"       class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="nav.blog">المقالات</span></a></li>
+            <li><a href="contact.html"    class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="nav.contact">اتصل بنا</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-t="footer.neighborhoodsCol">الأحياء</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="footer.linkHayRiad">حي الرياض</span></a></li>
+            <li><a href="#" class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="footer.linkSouissi">السويسي</span></a></li>
+            <li><a href="#" class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="footer.linkAgdal">أكدال</span></a></li>
+            <li><a href="#" class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="footer.linkNewRabat">الرباط الجديد</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-t="footer.contact">تواصل معنا</h4>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item"><i class="fa-solid fa-location-dot"></i><span data-t="footer.address">شارع المنزه، حي الرياض، الرباط</span></div>
+            <div class="footer-contact-item"><i class="fa-solid fa-phone"></i><a href="tel:+212612345678">+212 6 12 34 56 78</a></div>
+            <div class="footer-contact-item"><i class="fa-solid fa-envelope"></i><a href="mailto:contact@rabatprestige.ma">contact@rabatprestige.ma</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> رباط بريستيج للعقار. <span data-t="footer.rights">جميع الحقوق محفوظة</span></p>
+        <div class="footer-bottom-links">
+          <a href="#" data-t="footer.privacy">سياسة الخصوصية</a>
+          <a href="#" data-t="footer.terms">شروط الاستخدام</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/articles.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function applyFilters() {
+      const type   = document.getElementById('filterType').value;
+      const status = document.getElementById('filterStatus').value;
+      const filtered = properties.filter(p =>
+        (type   === 'all' || p.type   === type) &&
+        (status === 'all' || p.status === status)
+      );
+      renderProperties(filtered);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اتصل بنا | رباط بريستيج للعقار — حي الرياض، الرباط</title>
+  <meta name="description" content="تواصل مع وكالة رباط بريستيج للعقار في حي الرياض، الرباط. نحن متاحون للإجابة على جميع استفساراتك العقارية. Contact: +212 6 12 34 56 78">
+  <meta name="keywords" content="وكالة عقارية الرباط, اتصل, تواصل, عقارات حي الرياض, contact immobilier Rabat, agence immobilière Hay Riad">
+  <link rel="canonical" href="https://www.rabatprestige.ma/contact.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "صفحة الاتصال — رباط بريستيج للعقار",
+    "url": "https://www.rabatprestige.ma/contact.html",
+    "description": "تواصل مع وكالة رباط بريستيج للعقار",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+212612345678",
+      "contactType": "customer service",
+      "availableLanguage": ["Arabic","French","English","Spanish"]
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="rtl">
+
+  <!-- WhatsApp Float -->
+  <div class="whatsapp-float">
+    <span class="whatsapp-tooltip">تواصل معنا الآن</span>
+    <button class="whatsapp-float-btn" onclick="trackWhatsApp('floating')" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="wa-badge" id="waBadge"></span>
+    </button>
+  </div>
+  <button class="back-to-top" id="backToTop"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-text">رباط بريستيج</span>
+        <span class="logo-sub">Rabat Prestige Immobilier</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html"      class="nav-link" data-t="nav.home">الرئيسية</a></li>
+        <li><a href="properties.html" class="nav-link" data-t="nav.properties">العقارات</a></li>
+        <li><a href="blog.html"       class="nav-link" data-t="nav.blog">المقالات</a></li>
+        <li><a href="index.html#about" class="nav-link" data-t="nav.about">من نحن</a></li>
+        <li><a href="contact.html"    class="nav-link active" data-t="nav.contact" data-page="contact.html">اتصل بنا</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-btn" id="langBtn">
+            <span class="flag">🇲🇦</span>العربية<i class="fa-solid fa-chevron-down" style="font-size:.7rem"></i>
+          </button>
+          <div class="lang-dropdown">
+            <div class="lang-option active" data-lang="ar">🇲🇦 العربية</div>
+            <div class="lang-option" data-lang="fr">🇫🇷 Français</div>
+            <div class="lang-option" data-lang="en">🇬🇧 English</div>
+            <div class="lang-option" data-lang="es">🇪🇸 Español</div>
+          </div>
+        </div>
+        <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+        <a href="contact.html" class="nav-cta" data-t="nav.cta">ابحث الآن</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <header class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html" data-t="nav.home">الرئيسية</a>
+        <i class="fa-solid fa-chevron-left"></i>
+        <span data-t="nav.contact">اتصل بنا</span>
+      </div>
+      <h1 data-t="contact_page.title">اتصل بنا</h1>
+      <p data-t="contact_page.subtitle">فريقنا جاهز لمساعدتك في رحلتك العقارية</p>
+    </div>
+  </header>
+
+  <!-- Contact Content -->
+  <main class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info-stack">
+          <h2 style="font-size:1.6rem;font-weight:800;color:var(--primary);margin-bottom:8px" data-t="contact_page.infoTitle">معلومات التواصل</h2>
+          <p style="color:var(--text-gray);margin-bottom:24px;font-size:.95rem" data-t="contact_extra.contactSubtitle">نحن هنا للإجابة على جميع استفساراتك من الإثنين إلى الجمعة</p>
+
+          <div class="contact-info-card fade-up delay-1">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4 data-t="contact_extra.phoneLabel">الهاتف</h4>
+              <a href="tel:+212612345678">+212 6 12 34 56 78</a>
+            </div>
+          </div>
+
+          <div class="contact-info-card fade-up delay-2">
+            <div class="contact-icon"><i class="fa-brands fa-whatsapp" style="color:#25D366"></i></div>
+            <div>
+              <h4 data-t="contact_extra.waLabel">واتساب</h4>
+              <button onclick="trackWhatsApp('contact-page')" style="background:none;border:none;cursor:pointer;font-size:1rem;font-weight:600;color:var(--primary);font-family:var(--font);padding:0">+212 6 12 34 56 78</button>
+            </div>
+          </div>
+
+          <div class="contact-info-card fade-up delay-3">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4 data-t="contact_extra.emailLabel">البريد الإلكتروني</h4>
+              <a href="mailto:contact@rabatprestige.ma">contact@rabatprestige.ma</a>
+            </div>
+          </div>
+
+          <div class="contact-info-card fade-up delay-4">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4 data-t="contact_page.visitUs">زورونا</h4>
+              <p data-t="footer.address">شارع المنزه، حي الرياض، الرباط 10100، المغرب</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card fade-up delay-4">
+            <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <h4 data-t="contact_page.workHours">ساعات العمل</h4>
+              <p data-t="contact_page.workHoursVal">الإثنين – الجمعة: 9:00 – 18:00</p>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="map-container fade-in" aria-label="Location map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.5!2d-6.8500!3d33.9667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda71cfd!2sHay+Riad%2C+Rabat!5e0!3m2!1sar!2sma!4v1"
+              width="100%" height="280" style="border:0" allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="موقع رباط بريستيج للعقار — حي الرياض، الرباط">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap fade-up">
+          <h3 data-t="contact_extra.formTitle">أرسل لنا رسالة</h3>
+          <p class="form-sub" data-t="contact_extra.formSub">سنتواصل معك في أقرب وقت ممكن إن شاء الله</p>
+
+          <div class="form-success" id="formSuccess" role="alert"></div>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" data-t="contact_page.name">الاسم الكامل</label>
+                <input type="text" id="name" name="name" required autocomplete="name" data-ph="contact_page.name" placeholder="الاسم الكامل">
+              </div>
+              <div class="form-group">
+                <label for="phone" data-t="contact_page.phone">رقم الهاتف</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+212 6XX XXX XXX">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" data-t="contact_page.email">البريد الإلكتروني</label>
+              <input type="email" id="email" name="email" required autocomplete="email" data-ph="contact_page.email" placeholder="example@email.com">
+            </div>
+            <div class="form-group">
+              <label for="subject" data-t="contact_page.subject">الموضوع</label>
+              <select id="subject" name="subject">
+                <option value="">اختر الموضوع</option>
+                <option value="buy">شراء عقار</option>
+                <option value="sell">بيع عقار</option>
+                <option value="rent">إيجار عقار</option>
+                <option value="invest">استشارة استثمارية</option>
+                <option value="eval">تقييم عقاري مجاني</option>
+                <option value="other">أخرى</option>
+              </select>
+              <!-- options updated by updateContactSelect() -->
+            </div>
+            <div class="form-group">
+              <label for="message" data-t="contact_page.message">رسالتك</label>
+              <textarea id="message" name="message" required data-ph="contact_page.message" placeholder="اكتب رسالتك هنا..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span data-t="contact_page.send">إرسال الرسالة</span>
+            </button>
+          </form>
+
+          <!-- Quick WhatsApp -->
+          <div style="margin-top:24px;padding-top:24px;border-top:1px solid var(--border);text-align:center">
+            <p style="font-size:.9rem;color:var(--text-gray);margin-bottom:12px" data-t="contact_extra.quickWA">أو تواصل معنا مباشرة عبر واتساب للحصول على رد فوري</p>
+            <button onclick="trackWhatsApp('contact-form')" class="btn btn-whatsapp" style="width:100%;justify-content:center">
+              <i class="fa-brands fa-whatsapp" style="font-size:1.2rem"></i>
+              <span data-t="cta.btn">تواصل عبر واتساب</span>
+            </button>
+          </div>
+        </div>
+      </div><!-- /contact-grid -->
+
+      <!-- Quick Stats -->
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:60px;text-align:center" class="fade-up">
+        <div style="padding:32px 24px;background:var(--white);border-radius:var(--r-lg);border:1px solid var(--border)">
+          <div id="cstat1num" style="font-size:2.2rem;font-weight:800;color:var(--accent);margin-bottom:8px">أقل من ساعتين</div>
+          <p id="cstat1label" style="color:var(--text-gray);font-size:.9rem">متوسط وقت الرد على الاستفسارات</p>
+        </div>
+        <div style="padding:32px 24px;background:var(--white);border-radius:var(--r-lg);border:1px solid var(--border)">
+          <div id="cstat2num" style="font-size:2.2rem;font-weight:800;color:var(--accent);margin-bottom:8px">100%</div>
+          <p id="cstat2label" style="color:var(--text-gray);font-size:.9rem">نسبة الشفافية في جميع تعاملاتنا</p>
+        </div>
+        <div style="padding:32px 24px;background:var(--white);border-radius:var(--r-lg);border:1px solid var(--border)">
+          <div id="cstat3num" style="font-size:2.2rem;font-weight:800;color:var(--accent);margin-bottom:8px">مجاني</div>
+          <p id="cstat3label" style="color:var(--text-gray);font-size:.9rem">التقييم العقاري والاستشارة الأولى</p>
+        </div>
+      </div>
+    </div><!-- /container -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">رباط بريستيج</div>
+          <span class="logo-sub">Rabat Prestige Immobilier</span>
+          <p data-t="footer.desc">رواد العقار في الرباط — نخدمكم بأمانة واحترافية منذ 2009</p>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-t="footer.quickLinks">روابط سريعة</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"      class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="nav.home">الرئيسية</span></a></li>
+            <li><a href="properties.html" class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="nav.properties">العقارات</span></a></li>
+            <li><a href="blog.html"       class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="nav.blog">المقالات</span></a></li>
+            <li><a href="contact.html"    class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="nav.contact">اتصل بنا</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-t="footer.servicesCol">الخدمات</h4>
+          <ul class="footer-links">
+            <li><a href="properties.html" class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="footer.linkBuy">شراء عقار</span></a></li>
+            <li><a href="contact.html"    class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="footer.linkSell">بيع عقار</span></a></li>
+            <li><a href="properties.html" class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="footer.linkRent">إيجار عقار</span></a></li>
+            <li><a href="contact.html"    class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="footer.linkFreeConsult">استشارة مجانية</span></a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-t="footer.contact">تواصل معنا</h4>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item"><i class="fa-solid fa-location-dot"></i><span data-t="footer.address">شارع المنزه، حي الرياض، الرباط 10100</span></div>
+            <div class="footer-contact-item"><i class="fa-solid fa-phone"></i><a href="tel:+212612345678">+212 6 12 34 56 78</a></div>
+            <div class="footer-contact-item"><i class="fa-solid fa-envelope"></i><a href="mailto:contact@rabatprestige.ma">contact@rabatprestige.ma</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> رباط بريستيج للعقار. <span data-t="footer.rights">جميع الحقوق محفوظة</span></p>
+        <div class="footer-bottom-links">
+          <a href="#" data-t="footer.privacy">سياسة الخصوصية</a>
+          <a href="#" data-t="footer.terms">شروط الاستخدام</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/articles.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

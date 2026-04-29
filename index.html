@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0D1B2A">
+
+  <!-- ── SEO Meta Tags ─────────────────────────────────────── -->
+  <title>رباط بريستيج للعقار | Rabat Prestige Immobilier — حي الرياض والسويسي</title>
+  <meta name="description" content="وكالة عقارية رائدة في الرباط متخصصة في حي الرياض والسويسي وأكدال. شراء وبيع وإيجار فيلات وشقق فاخرة. خبرة 15 سنة. Agence immobilière leader à Rabat - Hay Riad, Souissi, Agdal.">
+  <meta name="keywords" content="عقارات الرباط, حي الرياض, السويسي, فيلا الرباط, شقق الرباط, وكالة عقارية, استثمار عقاري المغرب, Immobilier Rabat, Hay Riad, Souissi, villa Rabat, appartement Rabat, agence immobilière Maroc, real estate Rabat Morocco, propiedad Rabat Marruecos">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="رباط بريستيج للعقار">
+  <link rel="canonical" href="https://www.rabatprestige.ma/">
+
+  <!-- ── Open Graph ─────────────────────────────────────────── -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.rabatprestige.ma/">
+  <meta property="og:title" content="رباط بريستيج للعقار | الرياض والسويسي والرباط">
+  <meta property="og:description" content="وكالة عقارية رائدة في الرباط — فيلات وشقق فاخرة في حي الرياض والسويسي وأكدال. خبرة 15 سنة وأكثر من 500 عقار.">
+  <meta property="og:locale" content="ar_MA">
+  <meta property="og:locale:alternate" content="fr_MA">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- ── hreflang ───────────────────────────────────────────── -->
+  <link rel="alternate" hreflang="ar" href="https://www.rabatprestige.ma/">
+  <link rel="alternate" hreflang="fr" href="https://www.rabatprestige.ma/fr/">
+  <link rel="alternate" hreflang="en" href="https://www.rabatprestige.ma/en/">
+  <link rel="alternate" hreflang="es" href="https://www.rabatprestige.ma/es/">
+
+  <!-- ── Schema.org Structured Data ───────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "رباط بريستيج للعقار",
+    "alternateName": "Rabat Prestige Immobilier",
+    "url": "https://www.rabatprestige.ma",
+    "telephone": "+212612345678",
+    "email": "contact@rabatprestige.ma",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "شارع المنزه، حي الرياض",
+      "addressLocality": "الرباط",
+      "postalCode": "10100",
+      "addressCountry": "MA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "33.9667",
+      "longitude": "-6.8500"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "priceRange": "$$$$",
+    "areaServed": ["حي الرياض الرباط","السويسي الرباط","أكدال الرباط"],
+    "sameAs": [
+      "https://www.facebook.com/rabatprestige",
+      "https://www.instagram.com/rabatprestige"
+    ]
+  }
+  </script>
+
+  <!-- ── Fonts & Icons ─────────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="rtl">
+
+  <!-- ══════════════════════════════════════════════════════════
+       WHATSAPP FLOATING BUTTON
+  ══════════════════════════════════════════════════════════ -->
+  <div class="whatsapp-float">
+    <span class="whatsapp-tooltip">تواصل معنا الآن</span>
+    <button class="whatsapp-float-btn" onclick="trackWhatsApp('floating')" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="wa-badge" id="waBadge"></span>
+    </button>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- ══════════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════════ -->
+  <nav class="navbar transparent" id="navbar" role="navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-text">رباط بريستيج</span>
+        <span class="logo-sub">Rabat Prestige Immobilier</span>
+      </a>
+
+      <ul class="nav-menu" role="menubar">
+        <li><a href="index.html"     class="nav-link" data-t="nav.home"       data-page="index.html"      role="menuitem">الرئيسية</a></li>
+        <li><a href="properties.html" class="nav-link" data-t="nav.properties" data-page="properties.html" role="menuitem">العقارات</a></li>
+        <li><a href="blog.html"      class="nav-link" data-t="nav.blog"       data-page="blog.html"       role="menuitem">المقالات</a></li>
+        <li><a href="#about"         class="nav-link" data-t="nav.about"      role="menuitem">من نحن</a></li>
+        <li><a href="contact.html"   class="nav-link" data-t="nav.contact"    data-page="contact.html"    role="menuitem">اتصل بنا</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+            <span class="flag">🇲🇦</span>العربية<i class="fa-solid fa-chevron-down" style="font-size:.7rem"></i>
+          </button>
+          <div class="lang-dropdown" role="listbox">
+            <div class="lang-option active" data-lang="ar" role="option">🇲🇦 العربية</div>
+            <div class="lang-option" data-lang="fr" role="option">🇫🇷 Français</div>
+            <div class="lang-option" data-lang="en" role="option">🇬🇧 English</div>
+            <div class="lang-option" data-lang="es" role="option">🇪🇸 Español</div>
+          </div>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="contact.html" class="nav-cta" data-t="nav.cta">ابحث الآن</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-grid"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse"></span>
+          <span data-t="hero.badge">الوكالة العقارية الرائدة في الرباط</span>
+        </div>
+        <h1>
+          <span data-t="hero.title">اعثر على منزل</span>
+          <br><span class="highlight" data-t="hero.titleHighlight">أحلامك</span>
+        </h1>
+        <p class="hero-subtitle" data-t="hero.subtitle">
+          في أرقى أحياء العاصمة — حي الرياض، السويسي وأكدال، الرباط المغرب
+        </p>
+
+        <!-- Search Widget -->
+        <div class="search-widget" role="search">
+          <div class="search-tabs">
+            <button class="search-tab active" data-t="hero.btnBuy">للبيع</button>
+            <button class="search-tab" data-t="hero.btnRent">للإيجار</button>
+            <button class="search-tab" data-t="hero.btnInvest">استثمار</button>
+          </div>
+          <div class="search-bar">
+            <div class="search-input-wrapper">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" data-ph="hero.searchPlaceholder" placeholder="ابحث بالحي أو نوع العقار..." aria-label="Search">
+            </div>
+            <button class="search-btn" onclick="window.location='properties.html'">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span data-t="hero.btnSearch">بحث</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Hero Stats -->
+        <div class="hero-stats" aria-label="Statistics">
+          <div class="hero-stat"><div class="number">500+</div><div class="label" data-t="stats.properties">عقار متاح</div></div>
+          <div class="hero-stat"><div class="number">1200+</div><div class="label" data-t="stats.clients">عميل راضٍ</div></div>
+          <div class="hero-stat"><div class="number">15</div><div class="label" data-t="stats.years">سنة خبرة</div></div>
+          <div class="hero-stat"><div class="number">12+</div><div class="label" data-t="stats.areas">حي مغطى</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave"></div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       STATS
+  ══════════════════════════════════════════════════════════ -->
+  <section class="stats-section" aria-label="Agency statistics">
+    <div class="container">
+      <div class="stats-grid" id="statsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FEATURED PROPERTIES
+  ══════════════════════════════════════════════════════════ -->
+  <section class="properties-section" id="properties" aria-label="Featured properties">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title" style="text-align:inherit;margin-bottom:0">
+          <span class="section-badge" data-t="featured.title">عقارات مميزة</span>
+          <h2 data-t="featured.subtitle">اكتشف أحدث الفرص العقارية الفاخرة</h2>
+        </div>
+        <a href="properties.html" class="btn btn-outline" data-t="featured.viewAll">عرض جميع العقارات</a>
+      </div>
+      <div class="properties-grid" id="propertiesGrid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       SERVICES
+  ══════════════════════════════════════════════════════════ -->
+  <section class="services-section" id="services" aria-label="Our services">
+    <div class="container">
+      <div class="section-title fade-up">
+        <span class="section-badge" data-t="services.title">خدماتنا</span>
+        <h2 data-t="services.subtitle">نقدم خدمات عقارية متكاملة بأعلى معايير الاحترافية</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-up delay-1">
+          <div class="service-icon"><i class="fa-solid fa-key"></i></div>
+          <h3 data-t="services.buy.title">شراء عقار</h3>
+          <p data-t="services.buy.desc">نساعدك في إيجاد العقار المثالي من أوسع مجموعة في الرباط بأفضل الأسعار</p>
+        </div>
+        <div class="service-card fade-up delay-2">
+          <div class="service-icon"><i class="fa-solid fa-handshake"></i></div>
+          <h3 data-t="services.sell.title">بيع عقار</h3>
+          <p data-t="services.sell.desc">نضمن لك أسرع وأعلى عملية بيع لعقارك بفضل شبكتنا الواسعة من المشترين</p>
+        </div>
+        <div class="service-card fade-up delay-3">
+          <div class="service-icon"><i class="fa-solid fa-house-circle-check"></i></div>
+          <h3 data-t="services.rent.title">إيجار</h3>
+          <p data-t="services.rent.desc">خيارات إيجار متنوعة للأفراد والشركات في أحياء الرباط الراقية</p>
+        </div>
+        <div class="service-card fade-up delay-4">
+          <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3 data-t="services.invest.title">استشارة استثمارية</h3>
+          <p data-t="services.invest.desc">توجيهات متخصصة لاستثمارك العقاري لتحقيق أعلى عائد ممكن</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════════════════════════ -->
+  <section class="about-section" id="about" aria-label="About us">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image fade-in">
+          <div class="about-img-main">
+            <div class="about-img-inner"></div>
+          </div>
+          <div class="about-badge">
+            <div class="badge-icon"><i class="fa-solid fa-trophy"></i></div>
+            <div class="badge-text">
+              <strong>15+</strong>
+              <span data-t="about.badgeYears">سنة من الخبرة</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content fade-up">
+          <span class="section-badge" data-t="about.badge">من نحن</span>
+          <h2>
+            <span data-t="about.title">خبرة 15 عاماً في </span>
+            <span data-t="about.titleHighlight">سوق العقار المغربي</span>
+          </h2>
+          <p data-t="about.desc1">رباط بريستيج للعقار شركة رائدة في قطاع العقارات بالمغرب، تأسست عام 2009 في قلب العاصمة الرباط، متخصصة في أرقى الأحياء كحي الرياض والسويسي وأكدال.</p>
+          <p data-t="about.desc2">نؤمن بأن امتلاك منزلك ليس مجرد صفقة، بل حلم نسعى معك لتحقيقه وفق أعلى معايير الأمانة والمهنية والتوافق مع القيم الإسلامية.</p>
+          <div class="about-features">
+            <div class="about-feature"><div class="about-feature-icon"><i class="fa-solid fa-check"></i></div><span data-t="about.feature1">تقييم عقاري مجاني</span></div>
+            <div class="about-feature"><div class="about-feature-icon"><i class="fa-solid fa-check"></i></div><span data-t="about.feature2">شبكة مشترين واسعة</span></div>
+            <div class="about-feature"><div class="about-feature-icon"><i class="fa-solid fa-check"></i></div><span data-t="about.feature3">دعم قانوني متكامل</span></div>
+            <div class="about-feature"><div class="about-feature-icon"><i class="fa-solid fa-check"></i></div><span data-t="about.feature4">خبراء معتمدون</span></div>
+          </div>
+          <a href="contact.html" class="btn btn-primary" data-t="about.learnMore">اعرف أكثر</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       BLOG PREVIEW
+  ══════════════════════════════════════════════════════════ -->
+  <section class="blog-section" id="blog" aria-label="Blog articles">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-title" style="text-align:inherit;margin-bottom:0">
+          <span class="section-badge" data-t="blog.title">مقالاتنا</span>
+          <h2 data-t="blog.subtitle">نصائح ومعلومات قيمة عن سوق العقار</h2>
+        </div>
+        <a href="blog.html" class="btn btn-outline" data-t="blog.viewAll">جميع المقالات</a>
+      </div>
+      <div class="blog-grid" id="blogGrid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════════════════════════════════ -->
+  <section class="testimonials-section" aria-label="Client testimonials">
+    <div class="container">
+      <div class="section-title fade-up">
+        <span class="section-badge" data-t="testimonials.title">آراء عملائنا</span>
+        <h2 data-t="testimonials.subtitle">ثقة عملائنا هي أعظم جائزة نحصل عليها</h2>
+      </div>
+      <div class="testimonials-grid" id="testimonialsGrid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       CTA
+  ══════════════════════════════════════════════════════════ -->
+  <section class="cta-section" aria-label="Call to action">
+    <div class="container">
+      <div class="cta-card fade-up">
+        <div class="cta-content">
+          <h2>
+            <span data-t="cta.title">هل أنت مستعد للعثور على </span>
+            <span data-t="cta.titleHighlight">منزل أحلامك؟</span>
+          </h2>
+          <p data-t="cta.desc">تواصل معنا الآن عبر واتساب وسيتولى فريقنا المتخصص مساعدتك في أسرع وقت</p>
+          <button onclick="trackWhatsApp('cta-section')" class="btn btn-whatsapp">
+            <i class="fa-brands fa-whatsapp" style="font-size:1.3rem"></i>
+            <span data-t="cta.btn">تواصل عبر واتساب</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="logo-text">رباط بريستيج</div>
+          <span class="logo-sub">Rabat Prestige Immobilier</span>
+          <p data-t="footer.desc">رواد العقار في الرباط — نخدمكم بأمانة واحترافية منذ 2009</p>
+          <div class="footer-social" aria-label="Social media">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 data-t="footer.quickLinks">روابط سريعة</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"      class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="nav.home">الرئيسية</span></a></li>
+            <li><a href="properties.html" class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="nav.properties">العقارات</span></a></li>
+            <li><a href="blog.html"       class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="nav.blog">المقالات</span></a></li>
+            <li><a href="contact.html"    class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="nav.contact">اتصل بنا</span></a></li>
+          </ul>
+        </div>
+        <!-- Properties Types -->
+        <div class="footer-col">
+          <h4 data-t="footer.propTypesCol">العقارات</h4>
+          <ul class="footer-links">
+            <li><a href="properties.html" class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="footer.linkVillas">فيلات للبيع</span></a></li>
+            <li><a href="properties.html" class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="footer.linkApts">شقق فاخرة</span></a></li>
+            <li><a href="properties.html" class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="footer.linkPenthouse">بنتهاوس</span></a></li>
+            <li><a href="properties.html" class="footer-link"><i class="fa-solid fa-chevron-left"></i><span data-t="footer.linkLands">أراضي بنائية</span></a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="footer-col">
+          <h4 data-t="footer.contact">تواصل معنا</h4>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span data-t="footer.address">شارع المنزه، حي الرياض، الرباط 10100، المغرب</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+212612345678">+212 6 12 34 56 78</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:contact@rabatprestige.ma">contact@rabatprestige.ma</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <button onclick="trackWhatsApp('footer')" style="background:none;border:none;color:inherit;cursor:pointer;font-size:inherit;font-family:inherit;padding:0">+212 6 12 34 56 78</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> رباط بريستيج للعقار. <span data-t="footer.rights">جميع الحقوق محفوظة</span></p>
+        <div class="footer-bottom-links">
+          <a href="#" data-t="footer.privacy">سياسة الخصوصية</a>
+          <a href="#" data-t="footer.terms">شروط الاستخدام</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════════
+       SCRIPTS
+  ══════════════════════════════════════════════════════════ -->
+  <script src="js/translations.js"></script>
+  <script src="js/articles.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
